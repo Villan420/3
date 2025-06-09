@@ -6,7 +6,6 @@ import './App.css';
 
 function App() {
 
-// Initialize the state for counter, step, and minimum value
 
 const [counter, setCounter] = useState(0);
 
@@ -14,7 +13,6 @@ const [step, setStep] = useState(1);
 
 const minValue = 0;
 
-// Handle increment
 
 const increment = () => {
 
@@ -22,7 +20,6 @@ const increment = () => {
 
  };
 
-// Handle decrement
 
 const decrement = () => {
 
@@ -34,15 +31,12 @@ if (counter - step >= minValue) {
 
  };
 
-// Reset counter to initial value
-
 const resetCounter = () => {
 
  setCounter(0);
 
  };
 
-// Handle step change
 
 const handleStepChange = (event) => {
 
@@ -63,11 +57,10 @@ return (
 
 <div className="counter-container">
 
-<h2>{counter}</h2> {/* Display current counter value */}
+<h2>{counter}</h2> 
 
 <div className="controls">
 
-{/* Buttons for Increment, Decrement, and Reset */}
 
 <button onClick={increment}>Increase</button>
 
@@ -89,7 +82,7 @@ type="number"
 
 value={step}
 
-onChange={handleStepChange} // Set custom increment/decrement step value
+onChange={handleStepChange} 
 
 min="1"
 
